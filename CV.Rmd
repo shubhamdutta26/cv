@@ -1,7 +1,7 @@
 ---
 name: Shubham
 surname: Dutta, Ph.D.
-position: "Scientist II"
+position: "Scientist"
 address: "Massbiologics, University of Massachusetts Medical School"
 phone: +1 (508) 502-0586
 www: shubhamdutta.com
@@ -15,6 +15,8 @@ date: "`r format(Sys.time(), '%B %Y')`"
 output: 
   vitae::awesomecv #:
     #pandoc_args: ["--lua-filter=lua/strong.lua"] 
+
+knit: (function(inputFile, encoding) { rmarkdown::render(inputFile, encoding = encoding, output_file = file.path(dirname(inputFile), paste0(Sys.Date(),"_CV","_ShubhamDutta",".pdf"))) })
 ---
 
 ```{r setup, include=FALSE}
@@ -26,26 +28,28 @@ library(vitae);library(tibble)
 # About me
 
  * Molecular Biologist with 10 years of experience in assay development
- * Designing & executing high-throughput CRISPR-Cas9 knockout & RNAi screens in cancer and rare genetic diseases
+ * Designing & executing high-throughput CRISPR-Cas9 knockout & RNAi screens in cancer and rare diseases
  * Experience in multicolor flow cytometry and flow panel design in blood
  * Design, production, and purification of monoclonal antibodies
  * Development and selection of stable clonal cell lines for protein production
- * Designing & executing antibody-antigen interaction studies using Surface Plasmon Resonance and BiLayer Interferometry
- * Supervising direct reports & working with cross-functional/ remote teams
+ * Designing & executing antibody-antigen interaction studies using SPR (Biacore) and BLI (OCTET)
+ * Training colleagues & research associates and working with cross-functional/ remote teams
+ * Electronic note keeping using Evernote and R Markdown
  * Actively serving as a Editorial Board Member & Reviewer of several peer-reviewed journals
 
 # Professional Experience
 
-## Scientist II, Massbiologics, University of Massachusetts Medical School
+## Scientist, Massbiologics, University of Massachusetts Medical School
 2020 - Present
 
-* Engineering novel antibodies against cell-surface markers in Neotropic non-human primates
-* Generation and screening of hybridomas
-* Production, purification, and quality testing of antibodies and proteins
-* Generation of stable antibody producing cell lines
-* High-throughput screening and identification of top expression clones
+* Lead scientist in engineering novel antibodies in Neotropic non-human primates
 * Multicolor flow cytometry and panel generation for primate blood
-* Managing research associates
+* Generation and screening of hybridomas to identify monoclonal antibody clones
+* High-throughput screening and identification of top expression clones
+* Generation of stable knockout lines (CHO, HEK) using CRISPR-Cas9
+* Production, purification, and quality testing of antibodies and proteins
+* Generation of stable, high producing cell lines
+* Training colleagues & research associates
 
 ## Scientist II, Totient Inc.
 2018 - 2020
@@ -54,15 +58,15 @@ library(vitae);library(tibble)
 * Developed strategies to simultaneously knockout two genes using CRISPR-Cas9
 * Experience with preparation of high-quality whole genome lentiviral sgRNA particles
 * Identification of targets using CRISPR mediated whole genome knockout screen on multiple cell lines
-* Identification of targets for recombinant antibodies using Protein arrays, western blotting, LC-MS, ELISA and immunofluorescence
-* Worked with CROs with for special assays including 3D cell culture, Mass Spectrometry, and Surface Plasmon Resonance (SPR)
-* Managed one direct report and one matrix reports in CROs
+* Identification of targets for recombinant antibodies using Protein arrays, ELISA and immunofluorescence
+* Worked with CROs with for special assays including 3D cell culture and SPR (Biacore)
+* Managed one direct report
 
 ## Post-doctoral Associate, University of Massachusetts Medical School
 2018
 
-* Developing a CRISPR screen to identify novel epigenetic regulators of EWS-FLI1 fusion oncoprotein which causes Ewing’s sarcoma
-* Executing genome wide shRNA/ RNAi and proteomic screens to identify transcription factors involved in X-chromosome inactivation
+* Developing a CRISPR screen to identify novel epigenetic regulators in Ewing's Sarcoma
+* Executing genome wide shRNA/ RNAi and proteomic screens to identify regulators in X-chromosome inactivation pathway
 * Genome editing by CRISPR/Cas9 for specific projects in the lab
 * Managed one intern and two junior graduate students
 
@@ -72,19 +76,19 @@ library(vitae);library(tibble)
 
 ## Molecular Biology
 
-CRISPR-Cas9 Knock-outs and Knock-in, Genome wide RNAi and CRISPR screens, PCR, SDS Page, Recombinant DNA Technology, Molecular Cloning, Mutagenesis, Western Blots, Quantitative RT-PCR, Flow Cytometry (upto 8 color sorting and Flow panel design), Gene tagging, ChIP-Seq, RNA-Seq, Preparation of NGS libraries, Fluorescence Microscopy
+CRISPR-Cas9 Knock-outs and Knock-in, Genome wide RNAi and CRISPR screens, PCR, SDS-PAGE, Recombinant DNA Technology, Molecular Cloning, Gateway cloning, Proficient in SnapGene tool, Mutagenesis, Western Blots, Quantitative RT-PCR, Flow Cytometry (upto 8 color sorting and Flow panel design), Gene tagging, ChIP-Seq, RNA-Seq, Preparation of NGS libraries, Fluorescence Microscopy
 
 ## Protein Biology
 
-Antibody engineering, Antibody production using transient and FedBatch culture, Purification using AKTA, ELISA, Surface Plasmon resonance (SPR) using Biacore, BiLayer Interferometry, In vitro Protein purification and kinase assays, Immunoprecipitation, Phospho-protein separation by phostag gels
+Antibody engineering, Antibody production using transient and FedBatch culture, Purification using AKTA, ELISA, Surface Plasmon resonance (SPR) using Biacore, BiLayer Interferometry (BLI) using OCTET, *In vitro* Protein purification and kinase assays, Immunoprecipitation, Phospho-protein separation by phostag gels
 
 ## Cell culture
 
-Stable cell line generation, High-throughut clone selection (AMBR15, Clonepix), Handling and culture of Blood and PBMCs, Generation of neurons from NPCs and iPSCs, Viral packaging and transduction, Soft agar colony formation, invasion and migration assays, Mammalian Cell Maintenance, Transfection and related techniques
+Stable cell line generation (CHO, HEK, MCF10A, etc.), High-throughput clone selection (AMBR15, Clonepix, Duetz system), Handling and culture of Blood and PBMCs, Generation of neurons from NPCs and iPSCs, Viral packaging and transduction, Soft agar colony formation, invasion and migration assays, Mammalian Cell culture, maintenance, Transfection and related techniques
 
 ## Data Science
 
-RNA-Seq and CHIP-Seq data analysis, Genomic data mining, R programming (Base, Tidyverse, Shiny, Bioconductor), Data wrangling, analysis and visualization, Basic statistics using R, Data driven websites (using R Shiny and Markdown), Basic knowledge in Python programming
+Electronic note keeping using Evernote and R Markdown, RNA-Seq and CHIP-Seq data analysis, Genomic data mining, R programming (Base, Tidyverse, Shiny, Bioconductor), Data wrangling, analysis and visualization, Basic statistics using R, Data driven websites (using R Shiny and Markdown), Basic knowledge in Python programming
 
 ## Scientific Editing/ Writing
 
